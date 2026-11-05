@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cristiancamilochaparro.github.io/nexora-studio/sitemap.xml
