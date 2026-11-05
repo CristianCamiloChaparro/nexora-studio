@@ -1,0 +1,26 @@
+name: Publicar instaladores
+# Une las partes del instalador, comprueba el SHA-256 y crea la Release.
+on:
+  push:
+    branches: [release-assets]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release-assets
+      - name: Unir y comprobar
+        run: |
+          mkdir out
+          cat parts/setup.* > out/NEXORA-Studio-Setup-0.1.0.exe
+          cat parts/portable.* > out/NEXORA-Studio-Portable-0.1.0.exe
+          cd out
+          sha256sum -c ../SHA256SUMS
+      - name: Crear la Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v0.1.0 out/*.exe --target main --title "NEXORA Studio 0.1.0" --notes-file NOTES.md
