@@ -1,1 +1,0 @@
-import{ct as e}from"./projectStore-DSAvH2VR.js";var t=e(e=>({time:0,playing:!1,loop:!1,fpsActual:0,droppedFrames:0,set:t=>e(t)}));export{t};
