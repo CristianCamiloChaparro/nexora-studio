@@ -14,7 +14,7 @@ Editor audiovisual: video multipista, diseño de imagen, audio, color y 3D en un
 |---|---|---|
 | Windows 10 y 11 (x64) | Disponible | `NEXORA-Studio-Setup-0.4.0.exe`, `NEXORA-Studio-Portable-0.4.0.exe` |
 | macOS (Apple Silicon e Intel) | Beta | `NEXORA-Studio-0.4.0-arm64.dmg`, `NEXORA-Studio-0.4.0-x64.dmg` |
-| Android 8 o posterior | Beta | `NEXORA-Studio-0.4.0.apk` |
+| Android 8 o posterior | Beta | `NEXORA-Studio-0.4.1.apk` |
 | iPhone y iPad | Próximamente | Todavía no se puede instalar |
 
 ## Instalar
